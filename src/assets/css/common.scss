@@ -1,0 +1,303 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/iconfont.woff2?t=1644979203575') format('woff2'),
+    url('../font/iconfont.woff?t=1644979203575') format('woff'),
+    url('../font/iconfont.ttf?t=1644979203575') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+// 滚动条样式
+::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 10px;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 10px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #afafaf;
+}
+
+::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background: #ededed;
+}
+
+
+.mystyle_dialog {
+  .el-dialog__header {
+    background: #38404f;
+    text-align: center;
+
+    .el-dialog__title {
+      color: #fff;
+    }
+  }
+}
+
+.video_dialog {
+  .el-dialog__body {
+    padding: 0;
+  }
+}
+
+
+.form_item_center {
+  .el-form-item__content {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.table_template {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  height: 100%;
+  box-sizing: border-box;
+
+  header {
+    .el-form-item {
+      margin-bottom: 5px;
+      margin-right: 10px;
+    }
+  }
+
+  main {
+    overflow: hidden;
+
+    .el-table {
+      width: 100%;
+      height: 100%;
+
+      th.el-table__cell {
+        background: #EFF2F8;
+      }
+
+      thead {
+        color: #333;
+      }
+    }
+
+    .el-table__inner-wrapper {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .el-table__body-wrapper {
+      flex: 1;
+    }
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.mystyle_table {
+  &.el-table {
+    width: 100%;
+    height: 100%;
+
+    th.el-table__cell {
+      background: #EFF2F8;
+    }
+
+    thead {
+      color: #333;
+    }
+  }
+
+}
+
+.noVerify.el-form {
+  .el-form-item {
+    margin-bottom: 5px;
+    margin-right: 10px;
+  }
+}
+.el-overlay .el-message-box {
+  border: none;
+}
+
+.w120 {
+  width: 120px;
+
+  &.el-input {
+    width: 120px;
+  }
+}
+
+.w150 {
+  width: 150px;
+
+  &.el-input {
+    width: 150px;
+  }
+}
+
+.w250 {
+  width: 250px;
+
+  &.el-input {
+    width: 250px;
+  }
+}
+
+.tree {
+  user-select: none;
+
+  .tree_node {
+    width: calc(100% - 45px);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+  }
+}
+
+.el-message-box__header {
+  background: #38404f;
+
+  .el-message-box__title {
+    color: #fff;
+  }
+}
+
+body .el-tree--highlight-current .el-tree-node.is-current>.el-tree-node__content {
+  background-color: #75b1f3;
+}
