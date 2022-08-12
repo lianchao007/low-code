@@ -4,7 +4,7 @@
  * @Author: lc
  * @Date: 2022-02-15 16:11:20
  * @LastEditors: lc
- * @LastEditTime: 2022-02-24 15:58:49
+ * @LastEditTime: 2022-08-12 16:07:22
  */
 // 读取本地缓存
 const getStorage = (key) => {
@@ -35,7 +35,7 @@ const setStorage = (key, value, expiredays = 30) => {
 const removeStorage = (key) => {
     localStorage.removeItem(key);
 }
-export default {
+export {
     getStorage,
     setStorage,
     removeStorage

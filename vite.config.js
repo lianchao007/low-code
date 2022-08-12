@@ -4,7 +4,7 @@
  * @Author: lc
  * @Date: 2022-02-15 09:17:30
  * @LastEditors: lc
- * @LastEditTime: 2022-08-08 15:39:37
+ * @LastEditTime: 2022-08-12 10:31:24
  */
 import {
   defineConfig
@@ -24,6 +24,7 @@ export default defineConfig({
       "api": path.resolve('./src/api'),
       "utils": path.resolve('./src/utils'),
       "components": path.resolve('./src/components'),
+      "componentsSet": path.resolve('./src/componentsSet'),
       "views": path.resolve('./src/views'),
     },
   },
@@ -31,7 +32,7 @@ export default defineConfig({
     preprocessorOptions: {
       // 设置 scss 公用变量文件
       scss: {
-        additionalData: `@import "./src/assets/css/var.scss"; @import "/aliplayer-min.css";`
+        additionalData: `@import "./src/assets/css/var.scss"; @import "/aliplayer-min.css"; @import "https://at.alicdn.com/t/c/font_3576227_v266yk7k1kn.css?spm=a313x.7781069.1998910419.52&file=font_3576227_v266yk7k1kn.css";`
       }
     }
   },

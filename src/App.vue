@@ -4,7 +4,7 @@
  * @Author: lc
  * @Date: 2022-02-15 09:17:30
  * @LastEditors: lc
- * @LastEditTime: 2022-03-04 09:56:06
+ * @LastEditTime: 2022-08-09 10:40:20
 -->
 <script setup>
 import { provide, readonly } from "vue";
@@ -23,6 +23,7 @@ provide('$echarts',readonly(echarts))
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #edeff3;
   color: #555;
   height: 100%;
 }
